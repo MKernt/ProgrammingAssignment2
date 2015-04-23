@@ -19,7 +19,7 @@ cacheSolve <- function(x, ...) {
     message("cache inversed")
     return(inv)
   }
-  data <- x%get()
+  data <- x$get()
   inv <- solve(data, ...)
   x$set_inverse(inv)
   inv
